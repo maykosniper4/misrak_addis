@@ -7,13 +7,17 @@ import Footer from "@/components/Footer";
 // Section components
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Menu from "@/components/Menu";
 import Chefs from "@/components/Chefs";
+import Reservation from "@/components/Reservation";
 
 // Define the main sections of the homepage for easy customization and reordering
 const SECTIONS = [
   { id: "hero", Component: Hero },
   { id: "about", Component: About },
+  { id: "menu", Component: Menu },
   { id: "chefs", Component: Chefs },
+  { id: "reservation", Component: Reservation },
 ];
 
 const HomePage = () => {

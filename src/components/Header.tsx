@@ -5,9 +5,10 @@ import { Menu, X, UtensilsCrossed } from "lucide-react";
 const NAV_ITEMS = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
-  { name: "Menu", href: "#" },
+  { name: "Menu", href: "#menu" },
   { name: "Chefs", href: "#chefs" },
-  { name: "Contact", href: "#" },
+  { name: "Reservation", href: "#reservation" },
+  { name: "Contact", href: "#footer" },
 ];
 
 const Header = () => {

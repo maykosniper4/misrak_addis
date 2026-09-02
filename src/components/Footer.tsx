@@ -12,8 +12,9 @@ const SOCIAL_LINKS = [
 const QUICK_LINKS = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
-  { name: 'Menu', href: '#' },
+  { name: 'Menu', href: '#menu' },
   { name: 'Chefs', href: '#chefs' },
+  { name: 'Reservation', href: '#reservation' },
 ];
 
 const CONTACT_INFO = {
@@ -38,7 +39,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-muted/50 border-t mt-12 md:mt-20">
+    <footer id="footer" className="bg-muted/50 border-t mt-12 md:mt-20">
       <div className="container-width py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Description */}

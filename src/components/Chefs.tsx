@@ -1,31 +1,34 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import Chef1 from "../assets/images/chef-1.webp";
-import Chef2 from "../assets/images/chef-2.webp";
-import Chef3 from "../assets/images/chef-3.webp";
+import Chef1 from "../assets/images/chef-1.jpg";
+import Chef2 from "../assets/images/chef-2.jpg";
+import Chef3 from "../assets/images/chef-3.jpg";
 
 // Centralized configuration for chef data
 const CHEF_PROFILES = [
   {
-    name: "Aarav Kapoor",
-    title: "Head Chef & Owner",
+    name: "Chef Girma Adugna",
+    title: "Chef",
     image: Chef1,
-    bio: "With over 15 years of culinary excellence, Aarav brings innovative techniques to traditional flavors.",
-    specialties: ["French Cuisine", "Molecular Gastronomy"],
+    bio: "Over 5 years of culinary experience, including 4 years of dedicated service with Addis Misrak.",
+    experience: "5+ Yrs Exp (4 Yrs at Addis Misrak)",
+    specialties: ["Ethiopian Cuisine", "Traditional Specialties"],
   },
   {
-    name: "Sloane Harper",
-    title: "Pastry Chef",
+    name: "Chef Genet W/Gebriel",
+    title: "Chef",
     image: Chef2,
-    bio: "Sloane creates stunning desserts that are as beautiful as they are delicious, trained in Paris.",
-    specialties: ["Patisserie", "Artisan Breads"],
+    bio: "Over 6 years of professional experience, bringing 4 years of culinary mastery to Addis Misrak.",
+    experience: "6+ Yrs Exp (4 Yrs at Addis Misrak)",
+    specialties: ["Traditional Dishes", "Culinary Arts"],
   },
   {
-    name: "Diego Montoya",
-    title: "Sous Chef",
+    name: "Chef Genet Berhanu",
+    title: "Chef",
     image: Chef3,
-    bio: "Diego specializes in Asian fusion, bringing bold flavors and precision to every dish.",
-    specialties: ["Asian Fusion", "Seafood"],
+    bio: "5 years of rich experience, with 5 full years dedicated to serving our guests at Addis Misrak.",
+    experience: "5 Yrs Exp (5 Yrs at Addis Misrak)",
+    specialties: ["Local Delicacies", "Ethiopian Specialties"],
   },
 ];
 
@@ -81,7 +84,10 @@ const Chefs = () => {
                 <h3 className="text-xl font-playfair font-semibold text-foreground mb-1">
                   {chef.name}
                 </h3>
-                <p className="text-primary font-medium mb-3">{chef.title}</p>
+                <p className="text-primary font-medium mb-1">{chef.title}</p>
+                <p className="text-xs font-bold text-black bg-amber-100 dark:bg-amber-200 dark:text-black border border-amber-300 inline-block px-3 py-1 rounded-full mb-3 shadow-sm">
+                  {chef.experience}
+                </p>
                 <p className="text-muted-foreground leading-relaxed">
                   {chef.bio}
                 </p>

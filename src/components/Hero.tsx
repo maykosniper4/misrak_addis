@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import HeroBG from "./../assets/images/hero-bg.webp";
 
 // Configurable constants for background image and section targets
-const MENU_SECTION_ID = "#";
-const CONTACT_SECTION_ID = "#";
+const MENU_SECTION_ID = "#menu";
+const RESERVATION_SECTION_ID = "#reservation";
 
 const Hero = () => {
   // Smooth scroll to a target section
@@ -65,7 +65,7 @@ const Hero = () => {
             variant="outline"
             size="lg"
             className="border-white text-white hover:bg-white hover:text-black px-8 py-3 text-lg font-semibold transition-all duration-300 transform hover:scale-105"
-            onClick={() => scrollToSection(CONTACT_SECTION_ID)}
+            onClick={() => scrollToSection(RESERVATION_SECTION_ID)}
           >
             Make Reservation
           </Button>

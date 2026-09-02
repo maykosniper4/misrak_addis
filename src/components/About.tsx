@@ -33,7 +33,7 @@ const About = () => {
                 that celebrate the art of exceptional food and heartfelt hospitality.
               </p>
               <p data-aos="fade-up" data-aos-delay="400">
-                We believe that great food tells a story — of rich heritage,
+                We believe that great food tells a story of rich heritage,
                 the dedicated hands that prepare it, and the unforgettable moments it creates. Every dish at
                 Misrak Addis is crafted with locally-sourced, fresh ingredients,
                 ensuring that each bite delivers rich flavor, tradition, and artistry.
