@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
-import Logo from "../assets/images/logo.png";
+import { Menu, X, UtensilsCrossed } from "lucide-react";
 
 // Navigation link configuration for easier future updates
 const NAV_ITEMS = [
   { name: "Home", href: "#home" },
-  { name: "About", href: "#" },
+  { name: "About", href: "#about" },
   { name: "Menu", href: "#" },
-  { name: "Chefs", href: "#" },
+  { name: "Chefs", href: "#chefs" },
   { name: "Contact", href: "#" },
 ];
 
@@ -46,7 +45,22 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Brand Logo */}
           <div className="flex-shrink-0">
-            <img src={Logo} width={200} height={200} className="p-2"/>
+            <button
+              onClick={() => handleNavigation("#home")}
+              className="flex items-center gap-3 text-left focus:outline-none group"
+            >
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center text-white shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform duration-300">
+                <UtensilsCrossed className="w-5 h-5" />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-playfair text-xl md:text-2xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
+                  Misrak Addis
+                </span>
+                <span className="text-[11px] font-semibold text-primary tracking-widest uppercase">
+                  ምስራቅ አዲስ
+                </span>
+              </div>
+            </button>
           </div>
 
           {/* Desktop Navigation */}

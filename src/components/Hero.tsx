@@ -32,7 +32,10 @@ const Hero = () => {
           data-aos-delay="100"
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-playfair font-bold text-white mb-6 leading-tight"
         >
-          Welcome to <span className="text-primary">RestoOne</span>
+          Welcome to <span className="text-primary">Misrak Addis</span>
+          <span className="block text-2xl sm:text-3xl md:text-4xl font-normal text-amber-400 mt-2 font-sans tracking-wide">
+            ምስራቅ አዲስ
+          </span>
         </h1>
 
         <p
@@ -40,8 +43,8 @@ const Hero = () => {
           data-aos-delay="500"
           className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed"
         >
-          Where culinary artistry meets exceptional hospitality. Experience the
-          finest flavors crafted with passion and precision.
+          Where Ethiopian culinary artistry meets exceptional hospitality. Experience the
+          finest authentic and modern flavors crafted with passion and precision.
         </p>
 
         {/* Call-to-action buttons */}

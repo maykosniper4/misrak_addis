@@ -63,7 +63,20 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// RestoOne restaurant theme colors
+				// Misrak Addis restaurant theme colors
+				misrak_addis: {
+					50: '#f7f6f3',
+					100: '#edeae3',
+					200: '#dcd6c7',
+					300: '#c4baa5',
+					400: '#b29e85',
+					500: '#a18870',
+					600: '#937a64',
+					700: '#7a6555',
+					800: '#665549',
+					900: '#554840',
+					950: '#2e2620',
+				},
 				resto_one : {
 					50: '#f7f6f3',
 					100: '#edeae3',

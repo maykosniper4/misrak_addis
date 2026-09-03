@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from "../assets/images/logo.png";
-import { Facebook, Instagram, Youtube } from 'lucide-react';
+import XoorixLogo from "../assets/images/xoorix-logo.png";
+import { Facebook, Instagram, Youtube, UtensilsCrossed } from 'lucide-react';
 
 // Configuration constants for easier future edits
 const SOCIAL_LINKS = [
@@ -11,26 +11,24 @@ const SOCIAL_LINKS = [
 
 const QUICK_LINKS = [
   { name: 'Home', href: '#home' },
-  { name: 'About', href: '#' },
+  { name: 'About', href: '#about' },
   { name: 'Menu', href: '#' },
-  { name: 'Chefs', href: '#' },
+  { name: 'Chefs', href: '#chefs' },
 ];
 
 const CONTACT_INFO = {
-  address: ['123 Culinary Avenue', 'New York, NY 10001'],
-  phone: '(555) 123-4567',
-  email: 'reservations@resto-one.com',
+  address: ['Bole Sub City, Namibia St.', 'Addis Ababa, Ethiopia'],
+  phone: '+251 11 661 2345',
+  email: 'reservations@misrakaddis.com',
 };
 
 const HOURS = [
-  { days: 'Mon-Thu', time: '5:00 PM - 10:00 PM' },
-  { days: 'Fri-Sat', time: '5:00 PM - 11:00 PM' },
-  { days: 'Sunday', time: '5:00 PM - 9:00 PM' },
+  { days: 'Mon-Thu', time: '8:00 AM - 10:00 PM' },
+  { days: 'Fri-Sat', time: '8:00 AM - 11:00 PM' },
+  { days: 'Sunday', time: '9:00 AM - 10:00 PM' },
 ];
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   // Smooth scrolling for internal anchor links
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
@@ -45,11 +43,21 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Description */}
           <div className="space-y-4">
-          <div className="flex-shrink-0">
-            <img src={Logo} width={200} height={200} className="p-2"/>
-          </div>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center text-white shadow-md shadow-amber-500/20">
+                <UtensilsCrossed className="w-5 h-5" />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-playfair text-xl font-bold tracking-tight text-foreground">
+                  Misrak Addis
+                </span>
+                <span className="text-[11px] font-semibold text-primary tracking-widest uppercase">
+                  ምስራቅ አዲስ
+                </span>
+              </div>
+            </div>
             <p className="text-muted-foreground leading-relaxed">
-              Experience culinary excellence where every dish tells a story of passion, creativity, and tradition.
+              Experience culinary excellence at Misrak Addis (ምስራቅ አዲስ), where authentic traditions meet unforgettable dining experiences and warm hospitality.
             </p>
             <div className="flex space-x-4">
               {SOCIAL_LINKS.map(({ name, icon: Icon, href }) => (
@@ -108,11 +116,30 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="border-t border-border mt-8 pt-8 text-center">
-          <p className="text-muted-foreground">
-            © {currentYear} RestoOne Restaurant. All rights reserved. | Crafted with passion for culinary excellence.
+        {/* Copyright & Developed By */}
+        <div className="border-t border-border mt-8 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+          <p className="text-muted-foreground text-sm">
+            © 2026 Misrak Addis (ምስራቅ አዲስ). All rights reserved.
           </p>
+
+          <div className="flex items-center gap-2.5">
+            <span className="text-xs uppercase tracking-wider font-medium text-muted-foreground">
+              Developed by
+            </span>
+            <a
+              href="https://xoorix.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-black hover:bg-neutral-900 border border-neutral-800 rounded-md px-3 py-1 transition-all duration-200 group shadow-sm hover:shadow"
+              title="Developed by Xoorix"
+            >
+              <img
+                src={XoorixLogo}
+                alt="Xoorix"
+                className="h-5 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

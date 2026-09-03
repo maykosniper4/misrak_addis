@@ -27,21 +27,21 @@ const About = () => {
             {/* Story Paragraphs */}
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
               <p data-aos="fade-up" data-aos-delay="200">
-                Founded in 2018, RestoOne has been a beacon of culinary excellence,
-                combining traditional techniques with modern innovation. Our journey
-                began with a simple mission: to create memorable dining experiences
-                that celebrate the art of exceptional cuisine.
+                Founded in 2018, Misrak Addis (ምስራቅ አዲስ) has been a beacon of culinary excellence,
+                combining authentic Ethiopian culinary traditions with modern gastronomic innovation. Our journey
+                began with a passionate mission: to create memorable dining experiences
+                that celebrate the art of exceptional food and heartfelt hospitality.
               </p>
               <p data-aos="fade-up" data-aos-delay="400">
-                We believe that great food tells a story — of the land it comes from,
-                the hands that prepare it, and the moments it creates. Every dish at
-                RestoOne is crafted with locally-sourced, seasonal ingredients,
-                ensuring that each bite delivers both flavor and sustainability.
+                We believe that great food tells a story — of rich heritage,
+                the dedicated hands that prepare it, and the unforgettable moments it creates. Every dish at
+                Misrak Addis is crafted with locally-sourced, fresh ingredients,
+                ensuring that each bite delivers rich flavor, tradition, and artistry.
               </p>
               <p data-aos="fade-up" data-aos-delay="600">
-                Our commitment to excellence has earned us recognition from food
-                critics and loyal patrons alike, but our greatest reward is the joy
-                we bring to every table.
+                Our commitment to quality has earned us recognition from food
+                critics and loyal patrons alike, but our greatest pride is the joy and
+                togetherness we bring to every table.
               </p>
             </div>
 
@@ -68,7 +68,7 @@ const About = () => {
             <div className="relative overflow-hidden rounded-lg shadow-2xl">
               <img
                 src={OurStoryImg}
-                alt="RestoOne Restaurant Interior"
+                alt="Misrak Addis Restaurant Interior"
                 className="w-full h-[500px] object-cover transition-transform duration-500 hover:scale-105"
               />
               {/* Overlay for visual depth */}
